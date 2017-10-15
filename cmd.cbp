@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cmd" />
+		<Option makefile="makefile" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="$make -f $makefile" />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make -f $makefile clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -f $makefile" />
+			<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/cmd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f $makefile" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile" />
+					<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/cmd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename=".cvsignore" />
+		<Unit filename="alias.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="alias.o" />
+		<Unit filename="attrib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="attrib.o" />
+		<Unit filename="batch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="batch.h" />
+		<Unit filename="batch.o" />
+		<Unit filename="beep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="beep.o" />
+		<Unit filename="bugs.txt" />
+		<Unit filename="call.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="call.o" />
+		<Unit filename="chcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="chcp.o" />
+		<Unit filename="choice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="choice.o" />
+		<Unit filename="cls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cls.o" />
+		<Unit filename="cmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmd.coff" />
+		<Unit filename="cmd.exe" />
+		<Unit filename="cmd.h" />
+		<Unit filename="cmd.map" />
+		<Unit filename="cmd.nostrip.exe" />
+		<Unit filename="cmd.o" />
+		<Unit filename="cmd.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="cmd.stripped.o" />
+		<Unit filename="cmdinput.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmdinput.o" />
+		<Unit filename="cmdtable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmdtable.o" />
+		<Unit filename="cmdver.h" />
+		<Unit filename="color.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="color.o" />
+		<Unit filename="config.h" />
+		<Unit filename="console.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="console.o" />
+		<Unit filename="copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="copy.o" />
+		<Unit filename="date.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="date.o" />
+		<Unit filename="del.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="del.o" />
+		<Unit filename="delay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="delay.o" />
+		<Unit filename="dir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dir.o" />
+		<Unit filename="dirstack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dirstack.o" />
+		<Unit filename="echo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="echo.o" />
+		<Unit filename="error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="error.o" />
+		<Unit filename="filecomp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="filecomp.o" />
+		<Unit filename="files.txt" />
+		<Unit filename="for.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="for.o" />
+		<Unit filename="free.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="free.o" />
+		<Unit filename="goto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="goto.o" />
+		<Unit filename="history.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="history.o" />
+		<Unit filename="history.txt" />
+		<Unit filename="hlp.mk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="if.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="if.o" />
+		<Unit filename="internal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="internal.o" />
+		<Unit filename="label.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="label.o" />
+		<Unit filename="license.txt" />
+		<Unit filename="locale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="locale.o" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="makefile" />
+		<Unit filename="memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="memory.o" />
+		<Unit filename="misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="misc.o" />
+		<Unit filename="move.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="move.o" />
+		<Unit filename="msgbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="msgbox.o" />
+		<Unit filename="path.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="path.o" />
+		<Unit filename="pause.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pause.o" />
+		<Unit filename="prompt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="prompt.o" />
+		<Unit filename="readme.txt" />
+		<Unit filename="redir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="redir.o" />
+		<Unit filename="ren.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ren.o" />
+		<Unit filename="res/terminal.ico" />
+		<Unit filename="screen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="screen.o" />
+		<Unit filename="set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="set.o" />
+		<Unit filename="shift.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="shift.o" />
+		<Unit filename="start.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="start.o" />
+		<Unit filename="strtoclr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="strtoclr.o" />
+		<Unit filename="time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="time.o" />
+		<Unit filename="timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="timer.o" />
+		<Unit filename="title.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="title.o" />
+		<Unit filename="todo.txt" />
+		<Unit filename="tools/config" />
+		<Unit filename="tools/config.mk" />
+		<Unit filename="tools/helper.mk" />
+		<Unit filename="tools/hlp.mk" />
+		<Unit filename="tools/hlp.mk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/include/.cvsignore" />
+		<Unit filename="tools/include/GL/glu.h" />
+		<Unit filename="tools/include/WinDNS.h" />
+		<Unit filename="tools/include/WinError.h" />
+		<Unit filename="tools/include/WinWlx.h" />
+		<Unit filename="tools/include/accctrl.h" />
+		<Unit filename="tools/include/aclapi.h" />
+		<Unit filename="tools/include/afd/shared.h" />
+		<Unit filename="tools/include/ascii.h" />
+		<Unit filename="tools/include/base.h" />
+		<Unit filename="tools/include/basetsd.h" />
+		<Unit filename="tools/include/coff.h" />
+		<Unit filename="tools/include/csrss/csrss.h" />
+		<Unit filename="tools/include/d3d.h" />
+		<Unit filename="tools/include/d3dcaps.h" />
+		<Unit filename="tools/include/d3dtypes.h" />
+		<Unit filename="tools/include/ddentry.h" />
+		<Unit filename="tools/include/ddk/af_irda.h" />
+		<Unit filename="tools/include/ddk/ccfuncs.h" />
+		<Unit filename="tools/include/ddk/cctypes.h" />
+		<Unit filename="tools/include/ddk/class2.h" />
+		<Unit filename="tools/include/ddk/cmtypes.h" />
+		<Unit filename="tools/include/ddk/csq.h" />
+		<Unit filename="tools/include/ddk/d3dhal.h" />
+		<Unit filename="tools/include/ddk/d3dnthal.h" />
+		<Unit filename="tools/include/ddk/dbgfuncs.h" />
+		<Unit filename="tools/include/ddk/ddrawi.h" />
+		<Unit filename="tools/include/ddk/ddrawint.h" />
+		<Unit filename="tools/include/ddk/defines.h" />
+		<Unit filename="tools/include/ddk/exfuncs.h" />
+		<Unit filename="tools/include/ddk/extypes.h" />
+		<Unit filename="tools/include/ddk/fsfuncs.h" />
+		<Unit filename="tools/include/ddk/fstypes.h" />
+		<Unit filename="tools/include/ddk/halfuncs.h" />
+		<Unit filename="tools/include/ddk/i386/irql.h" />
+		<Unit filename="tools/include/ddk/i386/pagesize.h" />
+		<Unit filename="tools/include/ddk/ioctrl.h" />
+		<Unit filename="tools/include/ddk/iodef.h" />
+		<Unit filename="tools/include/ddk/iofuncs.h" />
+		<Unit filename="tools/include/ddk/iotypes.h" />
+		<Unit filename="tools/include/ddk/kedef.h" />
+		<Unit filename="tools/include/ddk/kefuncs.h" />
+		<Unit filename="tools/include/ddk/ketypes.h" />
+		<Unit filename="tools/include/ddk/ldrfuncs.h" />
+		<Unit filename="tools/include/ddk/miniport.h" />
+		<Unit filename="tools/include/ddk/mmfuncs.h" />
+		<Unit filename="tools/include/ddk/mmtypes.h" />
+		<Unit filename="tools/include/ddk/ntbootvid.h" />
+		<Unit filename="tools/include/ddk/ntdd8042.h" />
+		<Unit filename="tools/include/ddk/ntddbeep.h" />
+		<Unit filename="tools/include/ddk/ntddblue.h" />
+		<Unit filename="tools/include/ddk/ntddk.h" />
+		<Unit filename="tools/include/ddk/ntddkbd.h" />
+		<Unit filename="tools/include/ddk/ntddmou.h" />
+		<Unit filename="tools/include/ddk/ntddscsi.h" />
+		<Unit filename="tools/include/ddk/ntddser.h" />
+		<Unit filename="tools/include/ddk/ntdef.h" />
+		<Unit filename="tools/include/ddk/ntifs.h" />
+		<Unit filename="tools/include/ddk/obfuncs.h" />
+		<Unit filename="tools/include/ddk/pnpfuncs.h" />
+		<Unit filename="tools/include/ddk/pnptypes.h" />
+		<Unit filename="tools/include/ddk/pofuncs.h" />
+		<Unit filename="tools/include/ddk/potypes.h" />
+		<Unit filename="tools/include/ddk/psfuncs.h" />
+		<Unit filename="tools/include/ddk/pstypes.h" />
+		<Unit filename="tools/include/ddk/scsi.h" />
+		<Unit filename="tools/include/ddk/sefuncs.h" />
+		<Unit filename="tools/include/ddk/setypes.h" />
+		<Unit filename="tools/include/ddk/srb.h" />
+		<Unit filename="tools/include/ddk/status.h" />
+		<Unit filename="tools/include/ddk/structs.h" />
+		<Unit filename="tools/include/ddk/types.h" />
+		<Unit filename="tools/include/ddraw.h" />
+		<Unit filename="tools/include/debug.h" />
+		<Unit filename="tools/include/defines.h" />
+		<Unit filename="tools/include/devices.h" />
+		<Unit filename="tools/include/digitalv.h" />
+		<Unit filename="tools/include/epsapi.h" />
+		<Unit filename="tools/include/errors.h" />
+		<Unit filename="tools/include/excpt.h" />
+		<Unit filename="tools/include/fmifs.h" />
+		<Unit filename="tools/include/fslib/vfatlib.h" />
+		<Unit filename="tools/include/funcs.h" />
+		<Unit filename="tools/include/getopt.h" />
+		<Unit filename="tools/include/icmpapi.h" />
+		<Unit filename="tools/include/ipexport.h" />
+		<Unit filename="tools/include/ipifcons.h" />
+		<Unit filename="tools/include/iprtrmib.h" />
+		<Unit filename="tools/include/libc/atexit.h" />
+		<Unit filename="tools/include/libc/file.h" />
+		<Unit filename="tools/include/libc/ieee.h" />
+		<Unit filename="tools/include/lsass/lsass.h" />
+		<Unit filename="tools/include/lsass/ntsecapi.h" />
+		<Unit filename="tools/include/messages.h" />
+		<Unit filename="tools/include/mmddk.h" />
+		<Unit filename="tools/include/mmsystem.h" />
+		<Unit filename="tools/include/msvcrt/alloc.h" />
+		<Unit filename="tools/include/msvcrt/assert.h" />
+		<Unit filename="tools/include/msvcrt/conio.h" />
+		<Unit filename="tools/include/msvcrt/crttypes.h" />
+		<Unit filename="tools/include/msvcrt/ctype.h" />
+		<Unit filename="tools/include/msvcrt/dir.h" />
+		<Unit filename="tools/include/msvcrt/direct.h" />
+		<Unit filename="tools/include/msvcrt/errno.h" />
+		<Unit filename="tools/include/msvcrt/fcntl.h" />
+		<Unit filename="tools/include/msvcrt/float.h" />
+		<Unit filename="tools/include/msvcrt/internal/atexit.h" />
+		<Unit filename="tools/include/msvcrt/internal/console.h" />
+		<Unit filename="tools/include/msvcrt/internal/file.h" />
+		<Unit filename="tools/include/msvcrt/internal/ieee.h" />
+		<Unit filename="tools/include/msvcrt/internal/rterror.h" />
+		<Unit filename="tools/include/msvcrt/internal/stdio.h" />
+		<Unit filename="tools/include/msvcrt/internal/tls.h" />
+		<Unit filename="tools/include/msvcrt/io.h" />
+		<Unit filename="tools/include/msvcrt/locale.h" />
+		<Unit filename="tools/include/msvcrt/malloc.h" />
+		<Unit filename="tools/include/msvcrt/math.h" />
+		<Unit filename="tools/include/msvcrt/mbctype.h" />
+		<Unit filename="tools/include/msvcrt/mbstring.h" />
+		<Unit filename="tools/include/msvcrt/msvcrtdbg.h" />
+		<Unit filename="tools/include/msvcrt/process.h" />
+		<Unit filename="tools/include/msvcrt/search.h" />
+		<Unit filename="tools/include/msvcrt/share.h" />
+		<Unit filename="tools/include/msvcrt/signal.h" />
+		<Unit filename="tools/include/msvcrt/stdarg.h" />
+		<Unit filename="tools/include/msvcrt/stddef.h" />
+		<Unit filename="tools/include/msvcrt/stdio.h" />
+		<Unit filename="tools/include/msvcrt/stdlib.h" />
+		<Unit filename="tools/include/msvcrt/string.h" />
+		<Unit filename="tools/include/msvcrt/sys/fcntl.h" />
+		<Unit filename="tools/include/msvcrt/sys/file.h" />
+		<Unit filename="tools/include/msvcrt/sys/locking.h" />
+		<Unit filename="tools/include/msvcrt/sys/stat.h" />
+		<Unit filename="tools/include/msvcrt/sys/time.h" />
+		<Unit filename="tools/include/msvcrt/sys/timeb.h" />
+		<Unit filename="tools/include/msvcrt/sys/types.h" />
+		<Unit filename="tools/include/msvcrt/sys/unistd.h" />
+		<Unit filename="tools/include/msvcrt/sys/utime.h" />
+		<Unit filename="tools/include/msvcrt/time.h" />
+		<Unit filename="tools/include/msvcrt/wchar.h" />
+		<Unit filename="tools/include/napi/core.h" />
+		<Unit filename="tools/include/napi/dbg.h" />
+		<Unit filename="tools/include/napi/i386/floatsave.h" />
+		<Unit filename="tools/include/napi/i386/segment.h" />
+		<Unit filename="tools/include/napi/npipe.h" />
+		<Unit filename="tools/include/napi/shared_data.h" />
+		<Unit filename="tools/include/napi/teb.h" />
+		<Unit filename="tools/include/napi/types.h" />
+		<Unit filename="tools/include/napi/win32.h" />
+		<Unit filename="tools/include/ndis.h" />
+		<Unit filename="tools/include/net/ndis.h" />
+		<Unit filename="tools/include/net/ndisoid.h" />
+		<Unit filename="tools/include/net/ntddndis.h" />
+		<Unit filename="tools/include/nspapi.h" />
+		<Unit filename="tools/include/ntddk.h" />
+		<Unit filename="tools/include/ntdll/.cvsignore" />
+		<Unit filename="tools/include/ntdll/base.h" />
+		<Unit filename="tools/include/ntdll/csr.h" />
+		<Unit filename="tools/include/ntdll/dbg.h" />
+		<Unit filename="tools/include/ntdll/ldr.h" />
+		<Unit filename="tools/include/ntdll/ntdll.h" />
+		<Unit filename="tools/include/ntdll/pagesize.h" />
+		<Unit filename="tools/include/ntdll/rtl.h" />
+		<Unit filename="tools/include/ntdll/trace.h" />
+		<Unit filename="tools/include/ntos.h" />
+		<Unit filename="tools/include/ntos/bootvid.h" />
+		<Unit filename="tools/include/ntos/cdrom.h" />
+		<Unit filename="tools/include/ntos/console.h" />
+		<Unit filename="tools/include/ntos/dbgfuncs.h" />
+		<Unit filename="tools/include/ntos/disk.h" />
+		<Unit filename="tools/include/ntos/except.h" />
+		<Unit filename="tools/include/ntos/file.h" />
+		<Unit filename="tools/include/ntos/fstypes.h" />
+		<Unit filename="tools/include/ntos/gditypes.h" />
+		<Unit filename="tools/include/ntos/halfuncs.h" />
+		<Unit filename="tools/include/ntos/haltypes.h" />
+		<Unit filename="tools/include/ntos/heap.h" />
+		<Unit filename="tools/include/ntos/kdbgsyms.h" />
+		<Unit filename="tools/include/ntos/kdfuncs.h" />
+		<Unit filename="tools/include/ntos/kefuncs.h" />
+		<Unit filename="tools/include/ntos/keyboard.h" />
+		<Unit filename="tools/include/ntos/ldrtypes.h" />
+		<Unit filename="tools/include/ntos/minmax.h" />
+		<Unit filename="tools/include/ntos/mm.h" />
+		<Unit filename="tools/include/ntos/ntdef.h" />
+		<Unit filename="tools/include/ntos/obtypes.h" />
+		<Unit filename="tools/include/ntos/port.h" />
+		<Unit filename="tools/include/ntos/ps.h" />
+		<Unit filename="tools/include/ntos/registry.h" />
+		<Unit filename="tools/include/ntos/rtl.h" />
+		<Unit filename="tools/include/ntos/rtltypes.h" />
+		<Unit filename="tools/include/ntos/security.h" />
+		<Unit filename="tools/include/ntos/service.h" />
+		<Unit filename="tools/include/ntos/synch.h" />
+		<Unit filename="tools/include/ntos/tape.h" />
+		<Unit filename="tools/include/ntos/time.h" />
+		<Unit filename="tools/include/ntos/tss.h" />
+		<Unit filename="tools/include/ntos/types.h" />
+		<Unit filename="tools/include/ntos/zw.h" />
+		<Unit filename="tools/include/ntos/zwtypes.h" />
+		<Unit filename="tools/include/ntsecapi.h" />
+		<Unit filename="tools/include/objbase.h" />
+		<Unit filename="tools/include/ole32/guiddef.h" />
+		<Unit filename="tools/include/pe.h" />
+		<Unit filename="tools/include/pseh.h" />
+		<Unit filename="tools/include/pseh/framebased.h" />
+		<Unit filename="tools/include/pseh/framebased/internal.h" />
+		<Unit filename="tools/include/pseh/setjmp.h" />
+		<Unit filename="tools/include/reactos/.cvsignore" />
+		<Unit filename="tools/include/reactos/buildno.h" />
+		<Unit filename="tools/include/reactos/config.h" />
+		<Unit filename="tools/include/reactos/errcodes.h" />
+		<Unit filename="tools/include/reactos/resource.h" />
+		<Unit filename="tools/include/reactos/version.h" />
+		<Unit filename="tools/include/richedit.h" />
+		<Unit filename="tools/include/roskrnl.h" />
+		<Unit filename="tools/include/rosrtl/devmode.h" />
+		<Unit filename="tools/include/rosrtl/gdimacro.h" />
+		<Unit filename="tools/include/rosrtl/logfont.h" />
+		<Unit filename="tools/include/rosrtl/minmax.h" />
+		<Unit filename="tools/include/rosrtl/registry.h" />
+		<Unit filename="tools/include/rosrtl/string.h" />
+		<Unit filename="tools/include/rosrtl/thread.h" />
+		<Unit filename="tools/include/samlib.h" />
+		<Unit filename="tools/include/schemadef.h" />
+		<Unit filename="tools/include/serviceinfo.h" />
+		<Unit filename="tools/include/snmp.h" />
+		<Unit filename="tools/include/sockets.h" />
+		<Unit filename="tools/include/structs.h" />
+		<Unit filename="tools/include/syssetup.h" />
+		<Unit filename="tools/include/tchar.h" />
+		<Unit filename="tools/include/tcpioctl.h" />
+		<Unit filename="tools/include/tcpmisc.h" />
+		<Unit filename="tools/include/tgetopt.h" />
+		<Unit filename="tools/include/tmschema.h" />
+		<Unit filename="tools/include/unicode.h" />
+		<Unit filename="tools/include/user32/accel.h" />
+		<Unit filename="tools/include/user32/callback.h" />
+		<Unit filename="tools/include/user32/regcontrol.h" />
+		<Unit filename="tools/include/user32/wininternal.h" />
+		<Unit filename="tools/include/uxtheme.h" />
+		<Unit filename="tools/include/wdm.h" />
+		<Unit filename="tools/include/win32k/bitmaps.h" />
+		<Unit filename="tools/include/win32k/brush.h" />
+		<Unit filename="tools/include/win32k/cliprgn.h" />
+		<Unit filename="tools/include/win32k/color.h" />
+		<Unit filename="tools/include/win32k/coord.h" />
+		<Unit filename="tools/include/win32k/cursoricon.h" />
+		<Unit filename="tools/include/win32k/dc.h" />
+		<Unit filename="tools/include/win32k/debug.h" />
+		<Unit filename="tools/include/win32k/debug1.h" />
+		<Unit filename="tools/include/win32k/driver.h" />
+		<Unit filename="tools/include/win32k/fillshap.h" />
+		<Unit filename="tools/include/win32k/float.h" />
+		<Unit filename="tools/include/win32k/font.h" />
+		<Unit filename="tools/include/win32k/gdiobj.h" />
+		<Unit filename="tools/include/win32k/icm.h" />
+		<Unit filename="tools/include/win32k/kapi.h" />
+		<Unit filename="tools/include/win32k/line.h" />
+		<Unit filename="tools/include/win32k/math.h" />
+		<Unit filename="tools/include/win32k/menu.h" />
+		<Unit filename="tools/include/win32k/metafile.h" />
+		<Unit filename="tools/include/win32k/misc.h" />
+		<Unit filename="tools/include/win32k/ntddraw.h" />
+		<Unit filename="tools/include/win32k/ntuser.h" />
+		<Unit filename="tools/include/win32k/paint.h" />
+		<Unit filename="tools/include/win32k/path.h" />
+		<Unit filename="tools/include/win32k/pen.h" />
+		<Unit filename="tools/include/win32k/print.h" />
+		<Unit filename="tools/include/win32k/region.h" />
+		<Unit filename="tools/include/win32k/text.h" />
+		<Unit filename="tools/include/win32k/win32k.h" />
+		<Unit filename="tools/include/win32k/wingl.h" />
+		<Unit filename="tools/include/windows.h" />
+		<Unit filename="tools/include/wine/basetsd.h" />
+		<Unit filename="tools/include/wine/cguid.h" />
+		<Unit filename="tools/include/wine/commctrl.h" />
+		<Unit filename="tools/include/wine/commdlg.h" />
+		<Unit filename="tools/include/wine/config.h" />
+		<Unit filename="tools/include/wine/cpl.h" />
+		<Unit filename="tools/include/wine/debug.h" />
+		<Unit filename="tools/include/wine/dlgs.h" />
+		<Unit filename="tools/include/wine/docobj.h" />
+		<Unit filename="tools/include/wine/exception.h" />
+		<Unit filename="tools/include/wine/exdisp.h" />
+		<Unit filename="tools/include/wine/fci.h" />
+		<Unit filename="tools/include/wine/fdi.h" />
+		<Unit filename="tools/include/wine/guiddef.h" />
+		<Unit filename="tools/include/wine/heap.h" />
+		<Unit filename="tools/include/wine/icom.h" />
+		<Unit filename="tools/include/wine/initguid.h" />
+		<Unit filename="tools/include/wine/mmreg.h" />
+		<Unit filename="tools/include/wine/msacm.h" />
+		<Unit filename="tools/include/wine/msacmdlg.h" />
+		<Unit filename="tools/include/wine/msacmdrv.h" />
+		<Unit filename="tools/include/wine/netspi.h" />
+		<Unit filename="tools/include/wine/npapi.h" />
+		<Unit filename="tools/include/wine/ntstatus.h" />
+		<Unit filename="tools/include/wine/oaidl.h" />
+		<Unit filename="tools/include/wine/objbase.h" />
+		<Unit filename="tools/include/wine/objidl.h" />
+		<Unit filename="tools/include/wine/ocidl.h" />
+		<Unit filename="tools/include/wine/ole2.h" />
+		<Unit filename="tools/include/wine/olectl.h" />
+		<Unit filename="tools/include/wine/oleidl.h" />
+		<Unit filename="tools/include/wine/port.h" />
+		<Unit filename="tools/include/wine/prsht.h" />
+		<Unit filename="tools/include/wine/rpcfc.h" />
+		<Unit filename="tools/include/wine/rpcss_shared.h" />
+		<Unit filename="tools/include/wine/servprov.h" />
+		<Unit filename="tools/include/wine/setupapi.h" />
+		<Unit filename="tools/include/wine/shellapi.h" />
+		<Unit filename="tools/include/wine/shlguid.h" />
+		<Unit filename="tools/include/wine/shlobj.h" />
+		<Unit filename="tools/include/wine/shlwapi.h" />
+		<Unit filename="tools/include/wine/shobjidl.h" />
+		<Unit filename="tools/include/wine/shtypes.h" />
+		<Unit filename="tools/include/wine/test.h" />
+		<Unit filename="tools/include/wine/unicode.h" />
+		<Unit filename="tools/include/wine/unknwn.h" />
+		<Unit filename="tools/include/wine/winbase.h" />
+		<Unit filename="tools/include/wine/winbase16.h" />
+		<Unit filename="tools/include/wine/windef.h" />
+		<Unit filename="tools/include/wine/windef16.h" />
+		<Unit filename="tools/include/wine/wine_common_ver.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="tools/include/wine/winerror.h" />
+		<Unit filename="tools/include/wine/wingdi.h" />
+		<Unit filename="tools/include/wine/wingdi16.h" />
+		<Unit filename="tools/include/wine/winnetwk.h" />
+		<Unit filename="tools/include/wine/winnt.h" />
+		<Unit filename="tools/include/wine/winspool.h" />
+		<Unit filename="tools/include/wine/winternl.h" />
+		<Unit filename="tools/include/wine/winuser.h" />
+		<Unit filename="tools/include/wine/winuser16.h" />
+		<Unit filename="tools/include/wine/wownt32.h" />
+		<Unit filename="tools/include/wine/wpp.h" />
+		<Unit filename="tools/include/wine/wtypes.h" />
+		<Unit filename="tools/include/winuser.h" />
+		<Unit filename="tools/rul.mak" />
+		<Unit filename="tools/rules.mak" />
+		<Unit filename="tools/tools/buildno.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/rcopy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/rdel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/regtests.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/rline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/rmkdir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/rrmdir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/rsym.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tools/tools/rtouch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="type.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="type.o" />
+		<Unit filename="ver.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ver.o" />
+		<Unit filename="verify.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="verify.o" />
+		<Unit filename="vol.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vol.o" />
+		<Unit filename="where.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="where.o" />
+		<Unit filename="window.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="window.o" />
+		<Unit filename="wishlist.txt" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
