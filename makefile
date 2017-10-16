@@ -39,7 +39,7 @@ TARGET_OBJECTS = \
 
 #include $(TOOLS_PATH)/helper.mk
 
-include tools/rules.mak
+include tools/rulez.mak
 
-include tools/helper.mk
+include tools/helperz.mak
 # EOF
